@@ -1,0 +1,51 @@
+Manifest-Version: 1.0
+Bundle-Category: Aem project
+Bundle-Description: Core bundle for Aem project
+Bundle-ManifestVersion: 2
+Bundle-Name: Aem project - Core
+Bundle-SymbolicName: aem-project.core
+Bundle-Version: 0.0.1.SNAPSHOT
+Export-Package: com.mysite.core.filters;version="1.0";uses:="javax.ser
+ vlet",com.mysite.core.listeners;version="1.0";uses:="org.apache.sling
+ .api.resource.observation",com.mysite.core.models;version="1.0";uses:
+ ="javax.annotation,org.apache.sling.api.resource,org.apache.sling.mod
+ els.annotations,org.apache.sling.models.annotations.injectorspecific"
+ ,com.mysite.core.schedulers;version="1.0",com.mysite.core.servlets;ve
+ rsion="1.0";uses:="javax.servlet,org.apache.sling.api,org.apache.slin
+ g.api.servlets"
+Import-Package: javax.annotation;version="0.0.0",com.day.cq.wcm.api;ve
+ rsion="[1.27,2)",com.mysite.core.filters;version="[1.0,2)",com.mysite
+ .core.listeners;version="[1.0,2)",com.mysite.core.schedulers;version=
+ "[1.0,2)",javax.servlet;version="[3.1,4)",org.apache.commons.lang3;ve
+ rsion="[3.6,4)",org.apache.sling.api;version="[2.3,3)",org.apache.sli
+ ng.api.request;version="[2.4,3)",org.apache.sling.api.resource;versio
+ n="[2.11,3)",org.apache.sling.api.resource.observation;version="[1.2,
+ 2)",org.apache.sling.api.servlets;version="[2.2,3)",org.apache.sling.
+ models.annotations;version="[1.5,2)",org.apache.sling.models.annotati
+ ons.injectorspecific;version="[1.1,2)",org.osgi.service.cm;version="[
+ 1.6,2)",org.slf4j;version="[1.7,2)"
+Private-Package: com.mysite.core.firstsev,com.mysite.core.int1,com.mys
+ ite.core.pk1,com.mysite.core.pk2,com.mysite.core.services
+Provide-Capability: osgi.service;objectClass:List<String>="com.mysite.
+ core.int1.EmailService1";uses:="com.mysite.core.int1",osgi.service;ob
+ jectClass:List<String>="com.mysite.core.pk1.authpub";uses:="com.mysit
+ e.core.pk1",osgi.service;objectClass:List<String>="java.lang.Runnable
+ ",osgi.service;objectClass:List<String>="javax.servlet.Filter";uses:=
+ "javax.servlet",osgi.service;objectClass:List<String>="javax.servlet.
+ Servlet";uses:="javax.servlet",osgi.service;objectClass:List<String>=
+ "org.apache.sling.api.resource.observation.ResourceChangeListener";us
+ es:="org.apache.sling.api.resource.observation"
+Require-Capability: osgi.service;filter:="(objectClass=com.mysite.core
+ .int1.EmailService1)";effective:=active,osgi.service;filter:="(object
+ Class=com.mysite.core.pk1.authpub)";effective:=active,osgi.extender;f
+ ilter:="(&(osgi.extender=osgi.component)(version>=1.4.0)(!(version>=2
+ .0.0)))",osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/com.mysite.core.filters.LoggingFilter.xml,
+ OSGI-INF/com.mysite.core.firstsev.servelteg.xml,OSGI-INF/com.mysite.c
+ ore.listeners.SimpleResourceListener.xml,OSGI-INF/com.mysite.core.pk2
+ .OsgiConfig.xml,OSGI-INF/com.mysite.core.schedulers.SimpleScheduledTa
+ sk.xml,OSGI-INF/com.mysite.core.services.YahooEmailServiceImpl.xml,OS
+ GI-INF/com.mysite.core.servlets.YahooEmailServlet.xml,OSGI-INF/com.my
+ site.core.servlets.servlet2.xml
+Sling-Model-Classes: com.mysite.core.models.HelloWorldModel
+

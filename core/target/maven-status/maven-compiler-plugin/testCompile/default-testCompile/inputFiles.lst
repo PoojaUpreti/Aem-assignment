@@ -1,0 +1,5 @@
+/home/pooja/Desktop/MavenArchtype/aem-project/core/src/test/java/com/mysite/core/models/HelloWorldModelTest.java
+/home/pooja/Desktop/MavenArchtype/aem-project/core/src/test/java/com/mysite/core/schedulers/SimpleScheduledTaskTest.java
+/home/pooja/Desktop/MavenArchtype/aem-project/core/src/test/java/com/mysite/core/testcontext/AppAemContext.java
+/home/pooja/Desktop/MavenArchtype/aem-project/core/src/test/java/com/mysite/core/filters/LoggingFilterTest.java
+/home/pooja/Desktop/MavenArchtype/aem-project/core/src/test/java/com/mysite/core/listeners/SimpleResourceListenerTest.java

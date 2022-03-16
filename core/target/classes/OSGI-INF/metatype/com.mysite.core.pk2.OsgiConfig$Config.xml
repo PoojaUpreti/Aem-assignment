@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.mysite.core.pk2.OsgiConfig$Config">
+  <OCD id="com.mysite.core.pk2.OsgiConfig$Config" name="servletauthpub" description="This is our first servlet">
+    <AD id="isAuthor" type="Boolean" name="author" description="This is author definition" default="true"/>
+  </OCD>
+  <Designate pid="com.mysite.core.pk2.OsgiConfig">
+    <Object ocdref="com.mysite.core.pk2.OsgiConfig$Config"/>
+  </Designate>
+</metatype:MetaData>
